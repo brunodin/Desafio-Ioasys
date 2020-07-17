@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.viewholder.DetailActivity"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="55sp"
+        android:background="@color/medium_pink">
+
+        <ImageButton
+            android:id="@+id/volta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/abc_vector_test"
+            android:layout_marginLeft="15sp"
+            android:padding="15sp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+        <TextView
+            android:id="@+id/txtempresa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:text="Empresa"
+            android:textSize="20sp"
+            android:textColor="@color/white"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/imgempresa"
+        android:layout_width="350sp"
+        android:layout_height="200sp"
+        android:background="@color/medium_pink"
+        android:layout_gravity="center"
+        android:layout_margin="20sp"/>
+
+    <TextView
+        android:id="@+id/txtdescricao"
+        android:layout_width="350sp"
+        android:layout_height="wrap_content"
+        tools:text="@string/lorem_ipsum_dolor_sit_amet_contetur_adipiscing_elit_nunc_accumsan"
+        android:textSize="15sp"
+        android:layout_margin="20sp"
+        android:justificationMode="inter_word"
+        android:layout_gravity="center_horizontal"/>
+
+
+</LinearLayout>

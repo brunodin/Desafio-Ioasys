@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_two"
+    android:importantForAutofill="noExcludeDescendants"
+    tools:context=".ui.viewholder.LoginActivity"
+    tools:ignore="UnusedAttribute">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="184.5sp"
+        android:layout_height="60sp"
+        android:layout_marginStart="88sp"
+        android:layout_marginTop="40.5sp"
+        android:layout_marginEnd="87.5sp"
+        android:background="@drawable/logo_ioasys"
+        android:backgroundTint="@color/medium_pink"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/titulo"
+        style="@style/TextStyle2"
+        android:layout_width="145.7sp"
+        android:layout_height="47sp"
+        android:layout_marginStart="107sp"
+        android:layout_marginTop="48.5sp"
+        android:layout_marginEnd="106.5sp"
+        android:gravity="center"
+        android:text="@string/bem_vindo_ao_empresas"
+        android:textColor="@color/charcoal_grey"
+        android:textSize="20sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/logo" />
+
+    <TextView
+        android:id="@+id/descricao"
+        style="@style/TextStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="43.5sp"
+        android:layout_marginTop="16.5sp"
+        android:layout_marginRight="43.5sp"
+        android:gravity="center"
+        android:text="@string/lorem_ipsum_dolor_sit_amet_contetur_adipiscing_elit_nunc_accumsan"
+        android:textColor="@color/charcoal_grey"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/titulo" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/layoutEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:errorEnabled="true"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/descricao">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/emailtxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="45sp"
+            android:layout_marginTop="60sp"
+            android:layout_marginRight="45sp"
+            android:drawableStart="@android:drawable/sym_action_email"
+            android:drawablePadding="17sp"
+            android:drawableTint="@color/medium_pink"
+            android:hint="@string/email" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/layoutPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:errorEnabled="true"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/layoutEmail"
+        app:passwordToggleEnabled="true">
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="45sp"
+            android:layout_marginTop="30sp"
+            android:layout_marginRight="45sp"
+            android:drawableStart="@android:drawable/ic_lock_lock"
+            android:drawablePadding="17sp"
+            android:drawableTint="@color/medium_pink"
+            android:hint="@string/password"
+            android:inputType="textPassword" />
+
+    <TextView
+        android:id="@+id/falha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="45sp"
+        android:layout_marginTop="9sp"
+        android:layout_marginRight="45sp"
+        android:gravity="center"
+        android:text="@string/credenciais_informadas_s_o_inv_lidas_tente_novamente"
+        android:textColor="@color/colorAccent"
+        android:textSize="12sp"
+        android:visibility="gone"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/layoutPassword" />
+
+    <Button
+        android:id="@+id/entrar"
+        android:layout_width="match_parent"
+        android:layout_height="44sp"
+        android:layout_marginLeft="45sp"
+        android:layout_marginTop="25sp"
+        android:layout_marginRight="45sp"
+        android:layout_marginBottom="20sp"
+        android:background="@color/greeny_blue"
+        android:text="@string/entrar"
+        android:textColor="@color/white"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <include
+        android:id="@+id/progress"
+        layout="@layout/progressbar"
+        android:visibility="gone"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

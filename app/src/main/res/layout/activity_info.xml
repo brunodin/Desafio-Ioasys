@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_two"
+    tools:context=".ui.viewholder.InfoActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_menu"
+            android:layout_width="match_parent"
+            android:layout_height="55sp"
+            android:background="@color/medium_pink"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme"
+            android:layoutDirection="ltr">
+
+            <ImageView
+                android:id="@+id/logoinfo"
+                android:layout_width="117.1sp"
+                android:layout_height="35sp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/logo_ioasys"
+                android:backgroundTint="@color/white"
+                android:visibility="visible"/>
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <TextView
+            android:id="@+id/cliquebusca"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Clique na busca para iniciar."
+            android:gravity="center"
+            android:textColor="@color/night_blue"/>
+
+        <TextView
+            android:id="@+id/entrouerro"
+            android:layout_width="262sp"
+            android:layout_height="40sp"
+            android:text="Nenhuma empresa foi encontrada para a busca realizada."
+            android:gravity="center"
+            android:textColor="@color/night_blue"
+            android:layout_marginTop="50sp"
+            android:visibility="gone"
+            android:layout_gravity="center"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerviewList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+
+    <include
+        android:id="@+id/progress2"
+        layout="@layout/progressbar"
+        android:visibility="gone" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

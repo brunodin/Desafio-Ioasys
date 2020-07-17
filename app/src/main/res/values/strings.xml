@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Ioasys</string>
+    <string name="credenciais_informadas_s_o_inv_lidas_tente_novamente">Credenciais Informadas são inválidas, tente novamente.</string>
+    <string name="password">Senha</string>
+    <string name="email">Email</string>
+    <string name="entrar">ENTRAR</string>
+    <string name="lorem_ipsum_dolor_sit_amet_contetur_adipiscing_elit_nunc_accumsan">Lorem ipsum dolor sit amet, contetur adipiscing elit. Nunc accumsan.</string>
+    <string name="bem_vindo_ao_empresas">Bem-Vindo Ao Empresas!</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+
+    <string name="home_second">Home Second</string>
+</resources>
